@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3094246855159388829}
   - component: {fileID: -6376393414523938229}
   - component: {fileID: -6376853073762979528}
-  - component: {fileID: 2037537672282361209}
+  - component: {fileID: 8290264264328328162}
   m_Layer: 0
   m_Name: NaveProtoss
   m_TagString: Player
@@ -124,7 +124,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!114 &2037537672282361209
+--- !u!114 &8290264264328328162
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,3 +136,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaab2fdedc3bea14488aa789d3e0cd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 4

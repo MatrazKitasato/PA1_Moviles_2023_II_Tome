@@ -5,10 +5,10 @@ using UnityEngine;
 public class MovimientoEnemigo : MonoBehaviour
 {
     public float speed = 2;
-    private ObstaclessStaticPool enemy;
+    private DynamicPool enemy;
     void Start()
     {
-        enemy = GetComponent<ObstaclessStaticPool>();
+        enemy = GetComponent<DynamicPool>();
     }
 
     // Update is called once per frame
@@ -19,24 +19,25 @@ public class MovimientoEnemigo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.tag == "Player")
         {
             ReturnToPool();
             GameManager.Instance.ships1.life--;
-            Debug.Log("aaa");
         }
     }
     private void OnBecameInvisible()
     {
+        Debug.Log("FuncionaPantalla");
         ReturnToPool();
     }
     void ReturnToPool()
     {
-        
-        
-        enemy.ReturnObstacle(gameObject);
-        Debug.Log("xxxxxxxxxxxxxxxxxx");
-        gameObject.SetActive(false);
-
+        if(gameObject != null)
+        {
+            Debug.Log("Devuelve");
+            //gameObject.SetActive(false);
+            enemy.ReturnObject(this.gameObject);
+            
+        }
     }
 }

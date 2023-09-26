@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8305934337758187889}
   - component: {fileID: 8873211845448961933}
   - component: {fileID: -1057560135434110060}
-  - component: {fileID: 5410138937926356287}
+  - component: {fileID: 8304065621600724831}
   m_Layer: 0
   m_Name: NaveZerg
   m_TagString: Player
@@ -124,7 +124,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!114 &5410138937926356287
+--- !u!114 &8304065621600724831
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,3 +136,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaab2fdedc3bea14488aa789d3e0cd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 4

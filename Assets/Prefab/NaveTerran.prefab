@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2336611665819090916}
   - component: {fileID: 3926483779773320380}
   - component: {fileID: 2198047814760073479}
-  - component: {fileID: -1891307529747506138}
+  - component: {fileID: -2401478382960594051}
   m_Layer: 0
   m_Name: NaveTerran
   m_TagString: Player
@@ -124,7 +124,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!114 &-1891307529747506138
+--- !u!114 &-2401478382960594051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,3 +136,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaab2fdedc3bea14488aa789d3e0cd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 4

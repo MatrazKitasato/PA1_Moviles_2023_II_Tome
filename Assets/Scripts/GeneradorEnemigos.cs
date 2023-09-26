@@ -8,10 +8,10 @@ public class GeneradorEnemigos : MonoBehaviour
     public float minY = -4.5f;
     public float maxY = 4.5f;
     private float tiempoUltimaGeneracion = 0.0f;
-    private ObstaclessStaticPool poolEnemies;
+    private DynamicPool poolEnemies;
     void Start()
     {
-        poolEnemies = GetComponent<ObstaclessStaticPool>();
+        poolEnemies = GetComponent<DynamicPool>();
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class GeneradorEnemigos : MonoBehaviour
     {
         if(Time.time - tiempoUltimaGeneracion > tiempoEntreGeneración)
         {
-            GameObject enemy = poolEnemies.GetObstacle();
+            GameObject enemy = poolEnemies.GetObject();
 
             float randomY = Random.Range(minY, maxY);
             enemy.transform.position = new Vector3(transform.position.x,randomY, 0);

@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movimientonave : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float force;
+    public float force = 4;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,18 @@ public class Movimientonave : MonoBehaviour
                 {
                     rb.velocity *= 0.25f;
                 }
+            }
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            GameManager.Instance.ships1.life -= 1;
+            if (GameManager.Instance.ships1.life <= 0)
+            {
+                Destroy(gameObject);
+                SceneManager.LoadScene(3);
             }
         }
     }
