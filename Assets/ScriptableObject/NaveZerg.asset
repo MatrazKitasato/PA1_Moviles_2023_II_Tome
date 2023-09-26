@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab3584d11951344cb5210f9282b2936, type: 3}
+  m_Name: NaveZerg
+  m_EditorClassIdentifier: 
+  ship: {fileID: 525568169876035958, guid: 1f227552ab98a5b4ab6f30f2b5fe8c14, type: 3}
+  image: {fileID: 21300000, guid: 8a49655ab59731d4885b8e4204658459, type: 3}
+  name: NaveZerg
+  speed: 1
