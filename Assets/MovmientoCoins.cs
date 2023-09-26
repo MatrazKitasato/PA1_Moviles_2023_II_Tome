@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovimientoEnemigo : MonoBehaviour
+public class MovmientoCoins : MonoBehaviour
 {
-    public float speed = 2;
-    private DynamicPool enemy;
+    public float speed = 4;
+    private DynamicPool coins;
     void Start()
     {
-        enemy = GetComponent<DynamicPool>();
+        coins = GetComponent<DynamicPool>();
     }
 
     // Update is called once per frame
@@ -22,22 +22,22 @@ public class MovimientoEnemigo : MonoBehaviour
         if (other.tag == "Player")
         {
             ReturnToPool();
-            GameManager.Instance.ships1.life--;
+            GameManager.Instance.ships1.score += 10;
         }
     }
     private void OnBecameInvisible()
     {
-        Debug.Log("FuncionaPantalla");
+        
         ReturnToPool();
     }
     void ReturnToPool()
     {
-        if(enemy != null)
+        if (coins != null)
         {
             Debug.Log("Devuelve");
             gameObject.SetActive(false);
-            enemy.ReturnObject(this.gameObject);
-            
+            coins.ReturnObject(gameObject);
+
         }
     }
 }

@@ -1194,30 +1194,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1613560122}
-  - component: {fileID: 1613560121}
   - component: {fileID: 1613560123}
+  - component: {fileID: 1613560124}
   m_Layer: 0
   m_Name: PoolGenerador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1613560121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613560120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0648d6e1d783bbf429d1eed322998deb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 1762897888537836468, guid: 9086a2e6de37867449ca4868eddb54a1, type: 3}
-  poolSize: 15
-  obstaclePool: []
+  m_IsActive: 1
 --- !u!4 &1613560122
 Transform:
   m_ObjectHideFlags: 0
@@ -1234,6 +1219,24 @@ Transform:
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1613560123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613560120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1717c884999e814aaaf7b913f97a705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsprefab:
+  - {fileID: 1762897888537836468, guid: 9086a2e6de37867449ca4868eddb54a1, type: 3}
+  - {fileID: 5338189843470488546, guid: fa6f491a8c95ede4b880c43f52329211, type: 3}
+  - {fileID: 5775063092918955908, guid: 07feb105f11516b49b1d85bbf8c22511, type: 3}
+  - {fileID: 7089362495794578987, guid: 80e937e4b714c164688a1016599844b8, type: 3}
+  listobjects: []
+--- !u!114 &1613560124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
