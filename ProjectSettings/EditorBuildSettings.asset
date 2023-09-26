@@ -7,5 +7,14 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 0a3e5308f439abf45876f55a4140962e
+  - enabled: 1
+    path: Assets/Scenes/Select.unity
+    guid: 180836ea4b7473d42abcdcee2065dc6d
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 64ff5b78444689b46afaa24c5486f4de
+  - enabled: 1
+    path: Assets/Scenes/Exit.unity
+    guid: 377357417da0efa41b01000bbe18413f
   m_configObjects: {}

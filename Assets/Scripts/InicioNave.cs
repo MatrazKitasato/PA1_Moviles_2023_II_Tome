@@ -10,4 +10,8 @@ public class InicioNave : MonoBehaviour
         int indexNave = PlayerPrefs.GetInt("NaveIndex");
         Instantiate(GameManager.Instance.ships[indexNave].ship, transform.position, Quaternion.identity);
     }
+    void Update()
+    {
+        
+    }
 }
