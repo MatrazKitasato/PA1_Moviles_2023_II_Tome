@@ -19,10 +19,4 @@ public class ScoreFinal : MonoBehaviour
         }
         highscore = newscore;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
