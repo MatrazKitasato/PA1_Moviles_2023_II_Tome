@@ -312,6 +312,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c35eed345b95c9c428dbdc83a37d75c4, type: 2}
   - {fileID: 11400000, guid: c5ac4709f2261c441a45d68799a784de, type: 2}
   ships1: {fileID: 11400000, guid: 0459514b3728ca64f837cb4b3b5dd13b, type: 2}
+  scorelist: {fileID: 11400000, guid: 168ad95a305a18d4e8a6a167d926a018, type: 2}
 --- !u!4 &494390761
 Transform:
   m_ObjectHideFlags: 0
