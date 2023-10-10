@@ -1463,8 +1463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score_final: {fileID: 853405811}
-  puntajes: {fileID: 0}
-  content: {fileID: 0}
+  content: {fileID: 911732811}
   scores: {fileID: 0}
 --- !u!1 &1598456069
 GameObject:
