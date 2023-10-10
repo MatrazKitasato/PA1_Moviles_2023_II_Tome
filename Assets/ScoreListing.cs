@@ -13,7 +13,7 @@ public class ScoreListing : MonoBehaviour
     }
     void Start()
     {
-        ScoreList listing = Instantiate(scores, content);
+        //ScoreList listing = Instantiate(scores, content);
     }
 
     // Update is called once per frame

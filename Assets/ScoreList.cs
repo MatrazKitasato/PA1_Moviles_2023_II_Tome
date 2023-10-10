@@ -6,5 +6,5 @@ using UnityEngine.UI;
 
 public class ScoreList : MonoBehaviour
 {
-    public Text text;
+    public Text text_score;
 }

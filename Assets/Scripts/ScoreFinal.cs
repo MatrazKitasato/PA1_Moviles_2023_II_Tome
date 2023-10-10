@@ -7,7 +7,6 @@ using TMPro;
 public class ScoreFinal : MonoBehaviour
 {
     public TextMeshProUGUI score_final;
-    int highscore = 0;
     int newscore;
     public Transform content;
     public ScoreList scores;
@@ -15,11 +14,13 @@ public class ScoreFinal : MonoBehaviour
     void Start()
     {
         newscore = Mathf.FloorToInt(GameManager.Instance.ships1.score);
+        score_final.text = newscore.ToString();
         GameManager.Instance.scorelist.score.Add(newscore);
-        for(int i = 0; i <= GameManager.Instance.scorelist.score.Count; i++)
+        for(int i = 0; i < GameManager.Instance.scorelist.score.Count; i++)
         {
-            scores.text.text = newscore.ToString();
+            scores.text_score.text = GameManager.Instance.scorelist.score[i].ToString();
             Instantiate(scores, content);
         }
+        
     }
 }
