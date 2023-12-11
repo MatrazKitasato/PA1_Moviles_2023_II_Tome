@@ -45,7 +45,7 @@ public class Movimientonave : MonoBehaviour
             if (GameManager.Instance.ships1.life <= 0)
             {
                 Destroy(gameObject);
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(4);
             }
         }
     }
