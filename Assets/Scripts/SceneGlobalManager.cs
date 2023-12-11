@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneGlobalManager : MonoBehaviour
 {
-    public EventSystem a;
+    
     void Start()
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0))
@@ -14,11 +14,7 @@ public class SceneGlobalManager : MonoBehaviour
             Invoke("ChangeSceneAdditive", 3);
         }
         
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(3))
-        {
-            Debug.Log("iniciando");
-            StartCoroutine(LoadYourAsyncScene());
-        }
+        
     }
 
     // Update is called once per frame
@@ -30,7 +26,6 @@ public class SceneGlobalManager : MonoBehaviour
     void ChangeSceneAdditive()
     {
         SceneManager.LoadScene(1, LoadSceneMode.Additive);
-        a.gameObject.SetActive(false);
     }
 
     IEnumerator LoadYourAsyncScene()
@@ -42,5 +37,23 @@ public class SceneGlobalManager : MonoBehaviour
             yield return null;
         }
         
+    }
+    public void ChangeScene(int n)
+    {
+        
+        Debug.Log("Cambiando a escena " + n);
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(3))
+        {
+            Debug.Log("iniciando");
+            //StartCoroutine(LoadYourAsyncScene());
+            SceneManager.LoadSceneAsync(4);
+        }
+        SceneManager.LoadScene(n);
+
+    }
+    public void Quit()
+    {
+        Debug.Log("Salir");
+        Application.Quit();
     }
 }

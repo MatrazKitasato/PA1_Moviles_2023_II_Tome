@@ -8,6 +8,7 @@ public class ChangeSceneButton : MonoBehaviour
     public void ChangeScene(int n)
     {
         SceneManager.LoadScene(n);
+        
     }
     public void Quit()
     {
